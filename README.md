@@ -1,6 +1,6 @@
 # Michael Ju
 
-I build AI backends that don't take the model's word for it — Python, FastAPI, PostgreSQL, and a habit of writing down when I'm wrong.
+I build AI backends with Python, FastAPI, and PostgreSQL — services that check what the model says instead of trusting it.
 
 **[filing-digest](https://github.com/mhju0/filing-digest)** reads Korean and US financial filings with an LLM on a short leash: no citation, no sentence; no source number, no number. A golden-set harness regression-tests its answers in CI.
 
