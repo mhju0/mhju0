@@ -1,15 +1,56 @@
 # Michael Ju
 
-I build AI backends with Python, FastAPI, and PostgreSQL — services that check what the model says instead of trusting it.
+AI backend developer — Python, FastAPI, PostgreSQL. I build LLM services that check
+what the model says instead of trusting it, and decide the shipping bar before I look
+at the numbers.
 
-**[filing-digest](https://github.com/mhju0/filing-digest)** reads Korean and US financial filings with an LLM on a short leash: no citation, no sentence; no source number, no number. A golden-set harness regression-tests its answers in CI.
+**Open to AI / backend engineering roles.** Seoul-based · native-level English.
 
-**[fullcourt](https://github.com/mhju0/fullcourt)** measures what the NBA schedule does to a game — travel, rest, density — and predicts results, backtested against every season since 1985–86. When learned weights edged out my hand-tuned ones, I didn't ship them: the shipping bar was set before I saw the numbers. [Live](https://fullcourt-nba.vercel.app), daily data pipeline.
+## 🧭 Selected work
 
-**[raintoday](https://github.com/mhju0/raintoday)** forecasts rain anywhere in Korea and re-judges every morning whether its own learning still helps — the day it loses to equal weights, it benches itself. [Live](https://raintoday.vercel.app/sky).
+**[filing-digest](https://github.com/mhju0/filing-digest)** — reads Korean (DART) and US (SEC) financial filings with an LLM on a short leash: no citation, no sentence; no source number, no number.
+*The hard part:* the guards are mechanical, not prompt-level — a citation guard drops any sentence without a retrieved source, a number guard drops any figure the model wrote itself, and a golden-set harness regression-tests answer quality in CI like any other test.
+`FastAPI` `PostgreSQL + pgvector` `KURE-v1` `Upstage Solar` `Docker Compose`
 
-**[stock-game](https://github.com/mhju0/stock-game)** is a paper-trading service for US and Korean stocks — multi-currency portfolios, benchmark comparisons, JWT auth, and a hand-built sliding-window rate limiter, hardened by two self-run security audits. [Live](https://stock-game-gray.vercel.app).
+**[fullcourt](https://github.com/mhju0/fullcourt)** — measures what the NBA schedule does to a game (travel, rest, density) and predicts results, backtested to 1985–86. → **[Live](https://fullcourt-nba.vercel.app)**
+*The hard part:* learned fatigue weights edged out my hand-tuned ones, and I still didn't ship them — the bar was written down before the numbers came in. Daily automated data pipeline on GitHub Actions.
+`Next.js` `Supabase/PostgreSQL` `Python ML` `Playwright` `Vitest`
 
-Three of these run in production, two of them on daily automated pipelines. filing-digest runs anywhere Docker Compose does.
+**[raintoday](https://github.com/mhju0/raintoday)** — nationwide Korean rain forecast that answers *when* it rains, not just whether. → **[Live](https://raintoday.vercel.app/sky)**
+*The hard part:* deciding when to trust its own learning. Twice a day it freezes both the adaptive and the equal-weight blend at every KMA station *before* the outcome exists, scores them on the identical set, and suspends learning the day adaptive loses.
+`Next.js` `PostgreSQL` `5 forecast providers` `Brier scoring`
 
-📫 michael.mh.ju@gmail.com
+**[stock-game](https://github.com/mhju0/stock-game)** — paper-trading service for US and Korean equities: multi-currency portfolios, FX, cost basis, S&P 500 / KOSPI benchmarks. → **[Live](https://stock-game-gray.vercel.app)**
+*The hard part:* the security layer is hand-built and audited — JWT + bcrypt, ownership checks, a sliding-window rate limiter I wrote myself, and two self-run security audits written up as documents. 273 tests on CI.
+`FastAPI` `PostgreSQL` `React` `GitHub Actions` `Render + Vercel`
+
+Three of these run in production, two on daily automated pipelines. filing-digest runs anywhere Docker Compose does.
+
+## 🧩 Also here
+
+- **[glass-table](https://github.com/mhju0/glass-table)** — Korean-first Hold'em trainer for iOS. Pure-Swift poker engine cross-checked against a Python oracle in a release-mode CI gate; zero third-party dependencies.
+- **[allergy-tracker](https://github.com/mhju0/allergy-tracker)** — solo re-design of a domain I first built with a team. Food status is derived from trial history on every read, never stored, so a delayed reaction weeks later flips it with nothing to invalidate.
+- **[bill-judge](https://github.com/mhju0/bill-judge)** — splitting a bill as a verdict people accept. BigInt largest-remainder allocation with a code-enforced invariant: the shares always sum back to the exact bill.
+
+**mammacare** (bootcamp team project, 5 people) — team lead and repo gatekeeper; owned auth (JWT + Google/Kakao/Naver, multi-provider account linking) and the notification/web-push system, reviewed and merged 41 teammate PRs. 🏆 2nd place.
+
+## 🛠 Stack
+
+**Daily**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+
+SQLAlchemy 2 (async) · Pydantic v2 · Alembic · pgvector · JWT/OAuth2
+
+**LLM work** — RAG pipeline design · HNSW retrieval · citation & number guardrails · golden-set offline evaluation · Azure OpenAI · Upstage Solar
+
+**Also shipped with** — React · Next.js · Swift/SwiftUI · React Native (Expo) · Supabase · Vercel · Render
+
+## 📫 Contact
+
+michael.mh.ju@gmail.com
