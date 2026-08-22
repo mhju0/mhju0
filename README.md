@@ -16,7 +16,7 @@ at the numbers.
 *The hard part:* learned fatigue weights edged out my hand-tuned ones, and I still didn't ship them — the bar was written down before the numbers came in. Daily automated data pipeline on GitHub Actions.
 `Next.js` `Supabase/PostgreSQL` `Python ML` `Playwright` `Vitest`
 
-**[raintoday](https://github.com/mhju0/raintoday)** — nationwide Korean rain forecast that answers *when* it rains, not just whether. → **[Live](https://raintoday.vercel.app/sky)**
+**[raintoday](https://github.com/mhju0/raintoday)** — nationwide Korean rain forecast that answers *when* it rains, not just whether. → **[Live](https://raintoday.vercel.app)**
 *The hard part:* deciding when to trust its own learning. Twice a day it freezes both the adaptive and the equal-weight blend at every KMA station *before* the outcome exists, scores them on the identical set, and suspends learning the day adaptive loses.
 `Next.js` `PostgreSQL` `5 forecast providers` `Brier scoring`
 
@@ -28,8 +28,7 @@ Three of these run in production, two on daily automated pipelines. filing-diges
 
 ## 🧩 Also here
 
-- **[glass-table](https://github.com/mhju0/glass-table)** — Korean-first Hold'em trainer for iOS. Pure-Swift poker engine cross-checked against a Python oracle in a release-mode CI gate; zero third-party dependencies.
-- **[bill-judge](https://github.com/mhju0/bill-judge)** — splitting a bill as a verdict people accept. BigInt largest-remainder allocation with a code-enforced invariant: the shares always sum back to the exact bill.
+**[glass-table](https://github.com/mhju0/glass-table)** — Korean-first Hold'em trainer for iOS. Pure-Swift poker engine cross-checked against a Python oracle in a release-mode CI gate; zero third-party dependencies.
 
 **mammacare** — bootcamp team project, 5 people, *private team repo*. Team lead and repo gatekeeper: owned auth (JWT + Google/Kakao/Naver with multi-provider account linking) and the notification/web-push system, and reviewed and merged 41 teammate PRs. 🏆 2nd place.
 
