@@ -29,10 +29,11 @@ Three of these run in production, two on daily automated pipelines. filing-diges
 ## 🧩 Also here
 
 - **[glass-table](https://github.com/mhju0/glass-table)** — Korean-first Hold'em trainer for iOS. Pure-Swift poker engine cross-checked against a Python oracle in a release-mode CI gate; zero third-party dependencies.
-- **[allergy-tracker](https://github.com/mhju0/allergy-tracker)** — solo re-design of a domain I first built with a team. Food status is derived from trial history on every read, never stored, so a delayed reaction weeks later flips it with nothing to invalidate.
 - **[bill-judge](https://github.com/mhju0/bill-judge)** — splitting a bill as a verdict people accept. BigInt largest-remainder allocation with a code-enforced invariant: the shares always sum back to the exact bill.
 
-**mammacare** (bootcamp team project, 5 people) — team lead and repo gatekeeper; owned auth (JWT + Google/Kakao/Naver, multi-provider account linking) and the notification/web-push system, reviewed and merged 41 teammate PRs. 🏆 2nd place.
+**mammacare** — bootcamp team project, 5 people, *private team repo*. Team lead and repo gatekeeper: owned auth (JWT + Google/Kakao/Naver with multi-provider account linking) and the notification/web-push system, and reviewed and merged 41 teammate PRs. 🏆 2nd place.
+
+↳ **[allergy-tracker](https://github.com/mhju0/allergy-tracker)** — then I rebuilt that project's allergy domain alone, as an iOS app, to find out what I'd change with no team constraints. Food status is now never stored: it's derived from trial history on every read, so a delayed reaction logged weeks later flips a “safe” food back to red with no cache to invalidate. 209 tests, zero network code.
 
 ## 🛠 Stack
 
@@ -45,7 +46,7 @@ Three of these run in production, two on daily automated pipelines. filing-diges
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-SQLAlchemy 2 (async) · Pydantic v2 · Alembic · pgvector · JWT/OAuth2
+SQLAlchemy 2 (async) · Pydantic v2 · pgvector · JWT/OAuth2
 
 **LLM work** — RAG pipeline design · HNSW retrieval · citation & number guardrails · golden-set offline evaluation · Azure OpenAI · Upstage Solar
 
