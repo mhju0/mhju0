@@ -47,7 +47,7 @@ Three of these run in production, two on daily automated pipelines. filing-diges
 
 SQLAlchemy 2 (async) · Pydantic v2 · pgvector · JWT/OAuth2
 
-**LLM work** — RAG pipeline design · HNSW retrieval · citation & number guardrails · golden-set offline evaluation · Azure OpenAI · Upstage Solar
+**LLM work** — RAG pipeline design · HNSW retrieval · citation & number guardrails · live-API golden-set evaluation · Azure OpenAI · Upstage Solar
 
 **Also shipped with** — React · Next.js · Swift/SwiftUI · React Native (Expo) · Supabase · Vercel · Render
 
