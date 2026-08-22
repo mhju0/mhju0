@@ -8,8 +8,8 @@ at the numbers.
 
 ## 🧭 Selected work
 
-**[filing-digest](https://github.com/mhju0/filing-digest)** — reads Korean (DART) and US (SEC) financial filings with an LLM on a short leash: no citation, no sentence; no source number, no number.
-*The hard part:* the guards are mechanical, not prompt-level — a citation guard drops any sentence without a retrieved source, a number guard drops any figure the model wrote itself, and a golden-set harness regression-tests answer quality in CI like any other test.
+**[filing-digest](https://github.com/mhju0/filing-digest)** — reads Korean (DART) and US (SEC) financial filings while keeping exact figures on a structured-data path outside the LLM.
+*The hard part:* the guards are mechanical, not prompt-level — missing or unknown citations reject the entire narrative, anchored financial-number patterns written by the model are blocked, and a 24-case live-API harness is run manually against an ingested corpus while deterministic service tests run in CI.
 `FastAPI` `PostgreSQL + pgvector` `KURE-v1` `Upstage Solar` `Docker Compose`
 
 **[fullcourt](https://github.com/mhju0/fullcourt)** — measures what the NBA schedule does to a game (travel, rest, density) and predicts results, backtested to 1985–86. → **[Live](https://fullcourt-nba.vercel.app)**
