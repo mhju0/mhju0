@@ -1,56 +1,65 @@
 # Michael Ju
 
-AI backend developer — Python, FastAPI, PostgreSQL. I build LLM services that check
-what the model says instead of trusting it, and decide the shipping bar before I look
-at the numbers.
+AI backend developer
 
-**Open to AI / backend engineering roles.** Seoul-based · native-level English.
+Seoul-based · native-level English
 
-## 🧭 Selected work
+## Selected work
 
-**[filing-digest](https://github.com/mhju0/filing-digest)** — reads Korean (DART) and US (SEC) financial filings while keeping exact figures on a structured-data path outside the LLM.
-*The hard part:* the guards are mechanical, not prompt-level — missing or unknown citations reject the entire narrative, anchored financial-number patterns written by the model are blocked, and a 24-case live-API harness is run manually against an ingested corpus while deterministic service tests run in CI.
-`FastAPI` `PostgreSQL + pgvector` `KURE-v1` `Upstage Solar` `Docker Compose`
+### [filing-digest](https://github.com/mhju0/filing-digest)
 
-**[fullcourt](https://github.com/mhju0/fullcourt)** — measures what the NBA schedule does to a game (travel, rest, density) and predicts results, backtested to 1985–86. → **[Live](https://fullcourt-nba.vercel.app)**
-*The hard part:* learned fatigue weights edged out my hand-tuned ones, and I still didn't ship them — the bar was written down before the numbers came in. Daily automated data pipeline on GitHub Actions.
-`Next.js` `Supabase/PostgreSQL` `Python ML` `Playwright` `Vitest`
+I wanted to check the original filings and financial figures when researching investments. This service searches Korean DART and US SEC filings, retrieves financial figures from structured data, and uses an LLM to write explanations.
 
-**[raintoday](https://github.com/mhju0/raintoday)** — nationwide Korean rain forecast that answers *when* it rains, not just whether. → **[Live](https://raintoday.vercel.app)**
-*The hard part:* deciding when to trust its own learning. Twice a day it freezes both the adaptive and the equal-weight blend at every KMA station *before* the outcome exists, scores them on the identical set, and suspends learning the day adaptive loses.
-`Next.js` `PostgreSQL` `5 forecast providers` `Brier scoring`
+The code checks those explanations for missing or unknown citations and blocked financial-number patterns. If a check fails, it discards the explanation and retains the structured figures. I evaluate the running API against an ingested corpus separately from the deterministic service tests in CI. The project runs locally with Docker Compose.
 
-**[stock-game](https://github.com/mhju0/stock-game)** — paper-trading service for US and Korean equities: multi-currency portfolios, FX, cost basis, S&P 500 / KOSPI benchmarks. → **[Live](https://stock-game-gray.vercel.app)**
-*The hard part:* the security layer is hand-built and audited — JWT + bcrypt, ownership checks, a sliding-window rate limiter I wrote myself, and two self-run security audits written up as documents. 273 tests on CI.
-`FastAPI` `PostgreSQL` `React` `GitHub Actions` `Render + Vercel`
+`FastAPI` · `PostgreSQL + pgvector` · `KURE-v1` · `Upstage Solar` · `Docker Compose`
 
-Three of these run in production, two on daily automated pipelines. filing-digest runs anywhere Docker Compose does.
+### [fullcourt](https://github.com/mhju0/fullcourt)
 
-## 🧩 Also here
+Before an NBA game, I like to see how much rest each team has had. Fullcourt puts fatigue scores and rest advantages alongside the schedule, using travel, rest days, and schedule density. A GitHub Actions pipeline updates the data automatically.
 
-**[glass-table](https://github.com/mhju0/glass-table)** — Korean-first Hold'em trainer for iOS. Pure-Swift poker engine cross-checked against a Python oracle in a release-mode CI gate; zero third-party dependencies.
+I also tested learned fatigue weights against the existing weights. They performed slightly better, but the improvement did not justify the migration cost under the criteria I had set before the experiment. I kept the existing weights and recorded the results.
 
-**mammacare** — bootcamp team project, 5 people, *private team repo*. Team lead and repo gatekeeper: owned auth (JWT + Google/Kakao/Naver with multi-provider account linking) and the notification/web-push system, and reviewed and merged 41 teammate PRs. 🏆 2nd place.
+[View NBA schedules](https://fullcourt-nba.vercel.app)
 
-↳ **[allergy-tracker](https://github.com/mhju0/allergy-tracker)** — then I rebuilt that project's allergy domain alone, as an iOS app, to find out what I'd change with no team constraints. Food status is now never stored: it's derived from trial history on every read, so a delayed reaction logged weeks later flips a “safe” food back to red with no cache to invalidate. 209 tests, zero network code.
+`Next.js` · `Supabase/PostgreSQL` · `Python` · `Playwright` · `Vitest`
 
-## 🛠 Stack
+### [raintoday](https://github.com/mhju0/raintoday)
 
-**Daily**
+An hourly rain forecast for Korea, built around the question I usually have when checking the weather: do I need an umbrella today?
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+The service saves adaptive and equal-weight forecasts before observations arrive, then compares them on the same sample. It uses equal weights when the adaptive blend underperforms or there isn't enough evidence to use it. Forecast performance is tracked by weather station.
 
-SQLAlchemy 2 (async) · Pydantic v2 · pgvector · JWT/OAuth2
+[View rain forecasts](https://raintoday.vercel.app)
 
-**LLM work** — RAG pipeline design · HNSW retrieval · citation & number guardrails · live-API golden-set evaluation · Azure OpenAI · Upstage Solar
+`Next.js` · `PostgreSQL` · `Brier scoring`
 
-**Also shipped with** — React · Next.js · Swift/SwiftUI · React Native (Expo) · Supabase · Vercel · Render
+### [stock-game](https://github.com/mhju0/stock-game)
 
-## 📫 Contact
+A paper-trading service for Korean and US stocks. It handles won and dollar portfolios, exchange rates, average purchase prices, and comparisons with the S&P 500 and KOSPI.
 
-michael.mh.ju@gmail.com
+I implemented JWT authentication, password hashing with bcrypt, ownership checks, and a sliding-window rate limiter. I also reviewed the service for security issues and documented the findings and fixes.
+
+[Open the trading simulator](https://stock-game-gray.vercel.app)
+
+`FastAPI` · `PostgreSQL` · `React` · `GitHub Actions` · `Render/Vercel`
+
+## Team and iOS projects
+
+**mammacare** is a service for recording baby-food schedules and allergy reactions. We built it as a five-person team using Azure in May and June 2026. I led the team and worked on the backend foundation, JWT authentication, Google/Kakao/Naver account linking, and scheduled notifications with web push. The team received an Excellence Award at the final presentation.
+
+**[glass-table](https://github.com/mhju0/glass-table)** is a Korean Hold'em trainer for iOS. Its poker engine is a separate Swift package, with results checked against a Python reference in release-mode CI. It has no third-party dependencies.
+
+**[allergy-tracker](https://github.com/mhju0/allergy-tracker)** is my solo iOS take on the allergy-recording domain. Food status is calculated from trial history rather than stored separately, so a reaction recorded later is reflected on the next read. Records stay on the device without backend synchronization.
+
+## Tools
+
+Python · FastAPI · PostgreSQL · SQLAlchemy 2 · Pydantic v2 · Docker · GitHub Actions
+
+My LLM work includes RAG, pgvector HNSW retrieval, citation and numeric checks, API evaluation, Azure OpenAI, and Upstage Solar.
+
+I've also used TypeScript, React, Next.js, Swift/SwiftUI, React Native, Supabase, Vercel, and Render in projects.
+
+## Contact
+
+[michael.mh.ju@gmail.com](mailto:michael.mh.ju@gmail.com)
