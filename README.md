@@ -9,6 +9,9 @@ Seoul-based · native-level English
 - **[filing-digest](https://github.com/mhju0/filing-digest)** · [Walkthrough](https://mhju0.github.io/filing-digest/)<br>
   Korean DART and US SEC filing reader. Keeps financial figures in structured data and validates citations before showing LLM explanations.
 
+- **[filing-agent](https://github.com/mhju0/filing-agent)** · [Recorded replay](https://filing-agent.vercel.app)<br>
+  Conversational companion to Filing Digest, running locally on a Mac. A local model interprets questions; code selects verified financial figures, calculates comparisons, and withholds unsupported figures.
+
 - **[fullcourt](https://github.com/mhju0/fullcourt)** · [Live](https://fullcourt-nba.vercel.app)<br>
   Built for my NBA habit: checking the schedule and which team has the rest advantage. Shows fatigue scores based on travel, rest days, and schedule density.
 
@@ -35,7 +38,7 @@ Seoul-based · native-level English
 ![Python](https://img.shields.io/badge/Python-24292F?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-24292F?style=flat-square&logo=fastapi&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-24292F?style=flat-square&logo=postgresql&logoColor=white) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-24292F?style=flat-square&logo=sqlalchemy&logoColor=white)
 
 **AI**<br>
-![RAG](https://img.shields.io/badge/RAG-24292F?style=flat-square) ![pgvector](https://img.shields.io/badge/pgvector-24292F?style=flat-square) ![Azure OpenAI](https://img.shields.io/badge/Azure%20OpenAI-24292F?style=flat-square) ![Upstage Solar](https://img.shields.io/badge/Upstage%20Solar-24292F?style=flat-square)
+![RAG](https://img.shields.io/badge/RAG-24292F?style=flat-square) ![pgvector](https://img.shields.io/badge/pgvector-24292F?style=flat-square) ![Azure OpenAI](https://img.shields.io/badge/Azure%20OpenAI-24292F?style=flat-square) ![Upstage Solar](https://img.shields.io/badge/Upstage%20Solar-24292F?style=flat-square) ![Ollama](https://img.shields.io/badge/Ollama-24292F?style=flat-square) ![LangGraph](https://img.shields.io/badge/LangGraph-24292F?style=flat-square) ![LLM evaluation](https://img.shields.io/badge/LLM%20evaluation-24292F?style=flat-square)
 
 **Apps**<br>
 ![TypeScript](https://img.shields.io/badge/TypeScript-24292F?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-24292F?style=flat-square&logo=react&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-24292F?style=flat-square&logo=nextdotjs&logoColor=white) ![Swift / SwiftUI](https://img.shields.io/badge/Swift%20%2F%20SwiftUI-24292F?style=flat-square&logo=swift&logoColor=white)
