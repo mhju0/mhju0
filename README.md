@@ -4,16 +4,18 @@ AI backend developer
 
 Seoul-based · native-level English
 
+[Portfolio · 한국어](https://mhju0.github.io/ko/) · [Portfolio · English](https://mhju0.github.io/en/)
+
 ## Selected work
 
 - **[filing-digest](https://github.com/mhju0/filing-digest)** · [Walkthrough](https://mhju0.github.io/filing-digest/)<br>
   Korean DART and US SEC filing reader. Keeps financial figures in structured data and validates citations before showing LLM explanations.
 
 - **[filing-agent](https://github.com/mhju0/filing-agent)** · [Recorded replay](https://filing-agent.vercel.app)<br>
-  Conversational companion to Filing Digest, running locally on a Mac. A local model interprets questions; code selects verified financial figures, calculates comparisons, and withholds unsupported figures.
+  Local filing research app for Mac, using a separately verified historical snapshot from the Digest data audit. A local model interprets questions; code selects verified financial figures, calculates comparisons, and withholds unsupported figures. Answers and their evidence are saved in PostgreSQL, with explicit retries for interrupted steps.
 
 - **[fullcourt](https://github.com/mhju0/fullcourt)** · [Live](https://fullcourt-nba.vercel.app)<br>
-  Built for my NBA habit: checking the schedule and which team has the rest advantage. Shows fatigue scores based on travel, rest days, and schedule density.
+  Built for my NBA habit: checking the schedule and which team has the rest advantage. Compares rest and schedule load, with historical home/away baselines and source-linked NBA Last Two Minute reports from 12 regular seasons.
 
 - **[raintoday](https://github.com/mhju0/raintoday)** · [Live](https://raintoday.vercel.app)<br>
   Hourly rain forecasts for Korea, built around “Do I need an umbrella today?” Combines weather providers and evaluates their forecasts against observations to decide how much weight each gets.
