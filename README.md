@@ -1,5 +1,7 @@
 # Michael Ju
 
+**Backend development with AI and data**
+
 I build things I’m curious about
 
 [Portfolio (EN)](https://mhju0.github.io/en/) · [Portfolio (KO)](https://mhju0.github.io/ko/)
