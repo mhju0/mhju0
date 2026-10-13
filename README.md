@@ -29,9 +29,6 @@ I build things I’m curious about
 - **[Allergy Tracker](https://github.com/mhju0/allergy-tracker)**<br>
   A personal iOS adaptation of Mammacare for tracking food and allergic reactions
 
-- **[Sports Briefing](https://github.com/mhju0/sports-briefing)** · In development<br>
-  A personal sports briefing focused on what matters right now
-
 - **[Stock Game](https://github.com/mhju0/stock-game)** · [Website](https://stock-game-gray.vercel.app)<br>
   A stock market game for growing a virtual portfolio of Korean and US stocks
 
