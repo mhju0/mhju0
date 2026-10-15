@@ -21,7 +21,7 @@ I build things I’m curious about
   See the NBA schedule and compare how much rest each team gets
 
 - **[Raintoday](https://github.com/mhju0/raintoday)** · [Website](https://raintoday.vercel.app)<br>
-  Compare rain forecasts from five weather providers and see how accurately they predicted the rain
+  Compare available rain forecasts from five providers and review past forecasts against completed KMA station observations
 
 - **[Mammacare](https://mhju0.github.io/en/#project/mammacare)** · Team project<br>
   Track your baby’s food and allergic reactions in one place
