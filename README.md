@@ -17,7 +17,7 @@ I build things I’m curious about
 - **[Filing Agent](https://github.com/mhju0/filing-agent)** · [Recorded demo](https://filing-agent.vercel.app)<br>
   Ask questions about company filings and compare the figures
 
-- **[FullCourt](https://github.com/mhju0/fullcourt)** · [Website](https://fullcourt-nba.vercel.app)<br>
+- **[FullCourt](https://github.com/mhju0/fullcourt)** · [Website](https://fullcourt.fyi)<br>
   See the NBA schedule and compare how much rest each team gets
 
 - **[Raintoday](https://github.com/mhju0/raintoday)** · [Website](https://raintoday.vercel.app)<br>
