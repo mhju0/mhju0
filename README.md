@@ -18,7 +18,7 @@ I build things I’m curious about
   Ask questions about company filings and compare the figures
 
 - **[FullCourt](https://github.com/mhju0/fullcourt)** · [Website](https://fullcourt.fyi)<br>
-  See the NBA schedule and compare how much rest each team gets
+  Compare NBA rest and schedules, then explore shooting and officiating findings with source-linked methods
 
 - **[Raintoday](https://github.com/mhju0/raintoday)** · [Website](https://raintoday.vercel.app)<br>
   Compare available rain forecasts from five providers and review past forecasts against completed KMA station observations
