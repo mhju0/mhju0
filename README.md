@@ -11,17 +11,17 @@ I build things I’m curious about
 - **[Glass Table](https://github.com/mhju0/glass-table)** · Preparing for release<br>
   An iPhone app for learning and practicing poker, one hand at a time
 
-- **[Filing Digest](https://github.com/mhju0/filing-digest)** · [Walkthrough](https://mhju0.github.io/filing-digest/)<br>
-  Explore key figures from company filings, with the original sources
-
 - **[Filing Agent](https://github.com/mhju0/filing-agent)** · [Recorded demo](https://filing-agent.vercel.app)<br>
   Ask questions about company filings and compare the figures
 
+- **[Filing Digest](https://github.com/mhju0/filing-digest)** · [Walkthrough](https://mhju0.github.io/filing-digest/)<br>
+  Explore key figures from company filings, with the original sources
+
 - **[FullCourt](https://github.com/mhju0/fullcourt)** · [Website](https://fullcourt.fyi)<br>
-  Compare NBA rest and schedules, then explore shooting and officiating findings with source-linked methods
+  Compare NBA rest and schedules, then explore shooting and officiating findings with sources and methods linked
 
 - **[Raintoday](https://github.com/mhju0/raintoday)** · [Website](https://raintoday.vercel.app)<br>
-  Compare available rain forecasts from five providers and review past forecasts against completed KMA station observations
+  Compare rain forecasts from five services and check them against KMA station observations
 
 - **[Mammacare](https://mhju0.github.io/en/#project/mammacare)** · Team project<br>
   Track your baby’s food and allergic reactions in one place
