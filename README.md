@@ -2,7 +2,7 @@
 
 **Backend development with AI and data**
 
-I build things I’m curious about
+I build things I’m curious about.
 
 [Portfolio (EN)](https://mhju0.github.io/en/) · [Portfolio (KO)](https://mhju0.github.io/ko/)
 
@@ -10,6 +10,9 @@ I build things I’m curious about
 
 - **[Glass Table](https://github.com/mhju0/glass-table)** · Preparing for release<br>
   An iPhone app for learning and practicing poker, one hand at a time
+
+- **[Allergy Tracker](https://github.com/mhju0/allergy-tracker)** · [App Store](https://apps.apple.com/kr/app/id6827961276)<br>
+  A personal iOS adaptation of Mammacare for tracking food and allergic reactions
 
 - **[Filing Agent](https://github.com/mhju0/filing-agent)** · [Recorded demo](https://filing-agent.vercel.app)<br>
   Ask questions about company filings and compare the figures
@@ -23,14 +26,11 @@ I build things I’m curious about
 - **[Raintoday](https://github.com/mhju0/raintoday)** · [Website](https://raintoday.vercel.app)<br>
   Compare rain forecasts from five services and check them against KMA station observations
 
-- **[Mammacare](https://mhju0.github.io/en/#project/mammacare)** · Team project<br>
-  Track your baby’s food and allergic reactions in one place
-
-- **[Allergy Tracker](https://github.com/mhju0/allergy-tracker)**<br>
-  A personal iOS adaptation of Mammacare for tracking food and allergic reactions
-
 - **[Stock Game](https://github.com/mhju0/stock-game)** · [Website](https://stock-game-gray.vercel.app)<br>
   A stock market game for growing a virtual portfolio of Korean and US stocks
+
+- **[Mammacare](https://mhju0.github.io/en/#project/mammacare)** · Team project<br>
+  Track your baby’s food and allergic reactions in one place
 
 ## Contact
 
