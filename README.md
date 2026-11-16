@@ -29,7 +29,7 @@ I build things I’m curious about.
 - **[Allergy Tracker](https://github.com/mhju0/allergy-tracker)** · [App Store](https://apps.apple.com/kr/app/id6827961276)<br>
   A personal iOS adaptation of Mammacare for tracking food and allergic reactions
 
-- **[Infinity Chosung](https://mhju0.github.io/en/p/letter-game.html)** · TestFlight beta<br>
+- **[Infinity Chosung](https://mhju0.github.io/en/p/letter-game.html)** · [App Store](https://apps.apple.com/kr/app/id6829787196)<br>
   A Korean word game for iPhone: find words that match two initial consonants in 60 seconds
 
 - **[Glass Table](https://github.com/mhju0/glass-table)** · TestFlight beta<br>
