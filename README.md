@@ -52,7 +52,7 @@ Portfolio · [English](https://mhju0.github.io/en/) / [한국어](https://mhju0.
 
 **Infinity Chosung**<br>Find Korean words that match two initial consonants in 60 seconds.
 
-[Project page](https://mhju0.github.io/en/p/letter-game.html) · [App Store](https://apps.apple.com/kr/app/id6829787196)
+[Project page](https://mhju0.github.io/en/p/infinity-chosung.html) · [App Store](https://apps.apple.com/kr/app/id6829787196)
 
 ---
 
